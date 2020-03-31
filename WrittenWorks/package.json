@@ -51,14 +51,14 @@
     "npm": ">=6.14.4"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "echo \"Building -> WrittenWorks Pages...\" && gatsby build",
     "build-scss": "echo Coming Soon!",
-    "develop": "gatsby develop",
-    "deploy-pages": "gatsby build --prefix-paths && gh-pages -d public",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "develop": "echo \"Developing -> WrittenWorks Pages...\" && gatsby develop",
+    "deploy-pages": "echo \"Deploying -> WrittenWorks Pages in Github with Autocommit...\" && gatsby build && gh-pages -d public -b master",
+    "format": "echo \"Prettifying -> WrittenWorks Repository...\" && prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "echo \"Developing -> WrittenWorks...\" && npm run develop",
+    "serve": "echo \"Serving -> WrittenWorks...\" && gatsby serve",
+    "clean": "echo \"Cleaning -> WrittenWorks Repository... \" && gatsby clean",
+    "test": "echo \"Writing tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
 }
