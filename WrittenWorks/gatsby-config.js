@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Signed Written Works | Blog + Portfolio`,
+    title: `Signed Written Works`,
     description: `Kickstarted React Application that comes with Blogging, Written Works and Portfolio in mind.`,
     author: `@CodexLink`,
   },
@@ -18,7 +18,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/resources/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
