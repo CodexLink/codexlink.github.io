@@ -19,7 +19,9 @@
     "written-works",
     "work-publisher",
     "project-showcasing",
-    "personal-purpose"
+    "personal-purpose",
+    "gatsby-blogging",
+    "gatsby-powered"
   ],
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
@@ -27,20 +29,29 @@
   "dependencies": {
     "@material-ui/core": "^4.9.8",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.9.6",
     "@material/animation": "^5.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-manifest": "^2.2.48",
+    "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-react-helmet": "^3.1.24",
+    "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-sharp": "^2.4.13",
+    "gatsby-plugin-styled-components": "^3.2.1",
     "gatsby-source-filesystem": "^2.1.56",
+    "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.3.19",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
-    "react-masonry-component": "^6.2.1"
+    "react-masonry-component": "^6.2.1",
+    "styled-components": "^5.0.1",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
     "gh-pages": "^2.2.0",
