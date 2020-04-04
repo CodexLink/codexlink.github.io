@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{RXBc:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),c=a.n(n),l=a("76K0"),r=a("TJpk");t.default=function(){return c.a.createElement(n.Fragment,null,c.a.createElement(l.a,null),c.a.createElement(r.Helmet,{title:"It's me Bitch.",defer:!1},c.a.createElement("meta",{charSet:"utf-8"}),c.a.createElement("link",{rel:"canonical",href:"http://mysite.com/example"})))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-37cd67eff9792601fde7.js.map
