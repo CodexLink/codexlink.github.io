@@ -1,11 +1,14 @@
-
 import React from 'react';
-import Button from '@material-ui/core/Button';
+import { Container, Box } from '@material-ui/core';
 
-export default () => {
-    return (
-        <Button variant="contained" color="primary">
-          Hello World
-        </Button>
-      );
-}
+export default ({ children }) => {
+	return (
+		<Container fixed>
+			<Box>
+				{children}
+			</Box>
+		</Container>
+	);
+};
+
+// TODO: WRITE MULTIPLE INSTANCE SELECTOR SPECIFICALY FOR BLOGGING, HOME, MAIN AND SHOWCASE

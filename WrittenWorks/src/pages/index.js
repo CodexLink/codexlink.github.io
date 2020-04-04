@@ -1,13 +1,32 @@
 import React, { Fragment } from "react";
-import DefaultTest from "../components/container";
+import Container from "../components/container";
 import { Helmet } from "react-helmet";
+import { Button, CssBaseline } from "@material-ui/core";
+import AppHeader from '../components/header';
+import { graphql } from "gatsby";
+import "typeface-roboto-mono";
 
-export default () => (
+export default ({ data }) => (
   <Fragment>
-    <DefaultTest/>
-    <Helmet title="It's me Bitch." defer={false}>
-          <meta charSet="utf-8" />
-          <link rel="canonical" href="http://mysite.com/example" />
-        </Helmet>
+    <CssBaseline />
+    <Container>
+      <AppHeader />
+      <Helmet title={`${data.site.siteMetadata.title} | By CodexLink`} charSet="utf-8" defer={false}>
+        <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+      </Helmet>
+      <Button variant="contained" color="primary">
+        Hello World
+			</Button>
+    </Container>
   </Fragment>
 )
+
+export const query = graphql`
+query FrontWelcomeQuery {
+  site {
+    siteMetadata {
+      title
+    }
+  }
+}
+`
