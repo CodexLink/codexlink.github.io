@@ -1,11 +1,13 @@
 import React, { Fragment } from "react";
+import DefaultTest from "../components/container";
+import { Helmet } from "react-helmet";
 
-const IndexPage = () => (
+export default () => (
   <Fragment>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <DefaultTest/>
+    <Helmet title="It's me Bitch." defer={false}>
+          <meta charSet="utf-8" />
+          <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
   </Fragment>
 )
-
-export default IndexPage
