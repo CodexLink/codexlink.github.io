@@ -11,7 +11,6 @@ let theme = createMuiTheme({
     },
     typography: {
         fontFamily: [
-            'Roboto',
             '"Roboto Mono"',
         ].join(',')
     },
