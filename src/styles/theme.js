@@ -1,5 +1,5 @@
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
-import { amber, orange, red } from '@material-ui/core/colors';
+import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles"
+import { amber, orange, red } from "@material-ui/core/colors"
 
 let theme = createMuiTheme({
     palette: {
@@ -10,16 +10,14 @@ let theme = createMuiTheme({
         danger: orange,
     },
     typography: {
-        fontFamily: [
-            '"Roboto Mono"',
-        ].join(',')
+        fontFamily: ['"Roboto Mono"'].join(","),
     },
     title: {
         flexGrow: 1,
     },
-});
+})
 
-export default theme = responsiveFontSizes(theme);
+export default theme = responsiveFontSizes(theme)
 
 // TODO: Provide Font Variants for Specific Use Case.
 // @o | https://material-ui.com/customization/typography/
