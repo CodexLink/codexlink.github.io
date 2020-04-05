@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/pages/about.js"],"names":[],"mappings":"6FAAA,qCAIe,4BAAM","file":"component---src-pages-about-js-fc2ea8131665117711c0.js","sourcesContent":["import React, { Fragment } from \"react\";\r\nimport { graphql, Link } from \"gatsby\";\r\nimport { Helmet } from \"react-helmet\";\r\n\r\nexport default () => null;"],"sourceRoot":""}

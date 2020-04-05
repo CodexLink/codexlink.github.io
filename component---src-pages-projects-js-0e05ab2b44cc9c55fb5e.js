@@ -1,2 +1,2 @@
 (window.webpackJsonp=window.webpackJsonp||[]).push([[5],{"16l3":function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),l=a.n(n),c=a("76K0"),r=a("TJpk");t.default=function(){return l.a.createElement(n.Fragment,null,l.a.createElement(c.a,null),l.a.createElement(r.Helmet,{title:"It's me Bitch.",defer:!1},l.a.createElement("meta",{charSet:"utf-8"}),l.a.createElement("link",{rel:"canonical",href:"http://mysite.com/example"})))}}}]);
-//# sourceMappingURL=component---src-pages-projects-js-b3e11ef6dd937104d95b.js.map
+//# sourceMappingURL=component---src-pages-projects-js-0e05ab2b44cc9c55fb5e.js.map
