@@ -10,13 +10,10 @@ export default ({ data }) => (
   <Fragment>
     <CssBaseline />
     <Container>
-      <AppHeader />
       <Helmet title={`${data.site.siteMetadata.title} | By CodexLink`} charSet="utf-8" defer={false}>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Helmet>
-      <Button variant="contained" color="primary">
-        Hello World
-			</Button>
+      <AppHeader/>
     </Container>
   </Fragment>
 )
