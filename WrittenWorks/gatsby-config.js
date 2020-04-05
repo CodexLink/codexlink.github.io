@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Signed Written Works`,
+    title_secondary: `S.W.W`,
     description: `Kickstarted React Application that comes with Blogging, Written Works and Portfolio in mind.`,
-    author: `@CodexLink`,
+    author: `CodexLink`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
