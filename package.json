@@ -67,13 +67,13 @@
   },
   "scripts": {
     "build": "&& gatsby build",
-    "develop-debug": "node --nolazy --inspect-brk node_modules\\gatsby\\dist\\bin\\gatsby.js develop",
-    "build-debug": "node --nolazy --inspect-brk node_modules\\gatsby\\dist\\bin\\gatsby.js build",
+    "debug-develop": "node --nolazy --inspect-brk node_modules\\gatsby\\dist\\bin\\gatsby.js develop",
+    "debug-build": "node --nolazy --inspect-brk node_modules\\gatsby\\dist\\bin\\gatsby.js build",
     "develop": "gatsby develop",
-    "deploy-pages": "gatsby build && gh-pages -d public -b master -m \"Site Updated.\" ",
+    "publish": "gatsby build && gh-pages -d public -b master -m \"Site Updated.\" ",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "echo \"Serving -> WrittenWorks...\" && gatsby serve",
+    "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Writing tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   }
