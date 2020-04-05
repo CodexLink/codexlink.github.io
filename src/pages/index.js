@@ -19,7 +19,7 @@ export default ({ data }) => (
 )
 
 export const query = graphql`
-query FrontWelcomeQuery {
+query {
   site {
     siteMetadata {
       title
