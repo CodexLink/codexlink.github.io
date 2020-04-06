@@ -71,7 +71,7 @@
     "debug-develop": "node --nolazy --inspect-brk node_modules\\gatsby\\dist\\bin\\gatsby.js develop",
     "debug-build": "node --nolazy --inspect-brk node_modules\\gatsby\\dist\\bin\\gatsby.js build",
     "develop": "gatsby develop",
-    "publish": "gatsby build && gh-pages -d public -b master -m \"Site Updated.\" ",
+    "publish": "gatsby build && echo \"inst-typed.works\" > CNAME && gh-pages -d public -b master -m \"Site Updated.\" ",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
