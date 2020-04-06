@@ -56,7 +56,7 @@
   "devDependencies": {
     "gatsby-source-github-api": "^0.2.0",
     "gh-pages": "^2.2.0",
-    "prettier": "^2.0.2"
+    "prettier": "^2.0.3"
   },
   "optionalDependencies": {
     "typeface-roboto": "0.0.75",
