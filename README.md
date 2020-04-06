@@ -1,5 +1,5 @@
 <h1 align="center"> 📚🎆✔️ ⌨ Instantiated Typed Works</h1>
-<h3 align="center"><i>A Web-App That Contains Both My Portfolio, Projects and Blogging. Both Cherrished and Instantiated Typed Works of Mine. Powered by <a href="https://reactjs.org/">ReactJS</a>, <a href="https://gatsbyjs.org/">GatsbyJS</a>, <a href="https://material-ui.com/">Material-UI</a> and more!</i></h3>
+<h4 align="center"><i>A Web-App That Contains Both My Portfolio, Projects and Blogging. Both Cherrished and Instantiated Typed Works of Mine. Powered by <a href="https://reactjs.org/">ReactJS</a>, <a href="https://gatsbyjs.org/">GatsbyJS</a>, <a href="https://material-ui.com/">Material-UI</a> and more!</i></h4>
 
 <div align="center">
 
@@ -23,7 +23,7 @@
 
 </div>
 
-## ❓ ❗ What the hell is even this
+## ❓ ❗ 😕 What the hell is even this
 
 ## 💁 Introduction
 
