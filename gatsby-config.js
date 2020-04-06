@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: `Signed Written Works`,
-        title_secondary: `S.W.W`,
+        title: `Instantiated Typed Works`,
+        title_secondary: `I.T.W`,
         description: `Kickstarted React Application that comes with Blogging, Written Works and Portfolio in mind.`,
         author: `CodexLink`,
     },
