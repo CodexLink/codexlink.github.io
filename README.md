@@ -23,26 +23,73 @@
 
 </div>
 
-## ❓ ❗ 😕 What the hell is even this
+## ❓ ❗ What the hell is even this
+Hey, welcome to my personal project! This is a repository of my first web app from which I showcase everything that I have, other than from any social media. What's with the unusual README design? Well, I try to make things presentable. Due to how I'm gonna be documenting mostly everything here in this case.
+
 
 ## 💁 Introduction
 
 ## 🗄📁 File Structure
+
+If you really want to know what's inside of this project, then take a look here. It comes along with labels and detailed information about that particular files. Any excluded files included in `.gitignore` will not be shown here but rather flagged as `Excluded`.
+
 ```
-| Coming Soon.
-|
-|
-|
-|
-|
-|
+. <Repo Root Folder>
+├── <Excluded>
+├── .github
+│   └── workflow
+│       ├── ITWSiteBuilder.yml         ## <Information To Be Released Soon> ##
+│       └── PRLabeller.yml             ## <Information To Be Released Soon> ##
+├── <Excluded>
+├── <Excluded>
+├── src
+│   ├── components
+│   │   └── *.md                       ## <Information To Be Released Soon> ##
+│   │
+│   ├── pages
+│   │   ├── blogNotes                  ## <Information To Be Released Soon> ##
+│   │   │   └── *.md                   ## <Information To Be Released Soon> ##
+│   │   ├── projectNotes               ## <Information To Be Released Soon> ##
+│   │   │   └── *.md                   ## <Information To Be Released Soon> ##
+│   │   ├── (...)Notes                 ## <Information To Be Released Soon> ##
+│   │   │   └── *.md                   ## <Information To Be Released Soon> ##
+│   │   └── *.js                       ## <Information To Be Released Soon> ##
+│   │
+│   ├── resources
+│   │   ├── misc                       ## <Information To Be Released Soon> ##
+│   │   │   └── *.md                   ## <Information To Be Released Soon> ##
+│   │   └── images                     ## <Information To Be Released Soon> ##
+│   │       └── *.md                   ## <Information To Be Released Soon> ##
+│   ├── styles
+│       └── *.md                       ## <Information To Be Released Soon> ##
+│   ├── templates
+│       └── *.md                       ## <Information To Be Released Soon> ##
+│   └── utils
+│       └── *.md                       ## <Information To Be Released Soon> ##
+│
+├── .prettierrc                        ## <Information To Be Released Soon> ##
+├── gatsby-browser.js                  ## <Information To Be Released Soon> ##
+├── gatsby-config.js                   ## <Information To Be Released Soon> ##
+├── gatsby-node.js                     ## <Information To Be Released Soon> ##
+├── gatsby-ssr.js                      ## <Information To Be Released Soon> ##
+├── LICENSE                            ## <Information To Be Released Soon> ##
+├── package-lock.json                  ## <Information To Be Released Soon> ##
+├── package.json                       ## <Information To Be Released Soon> ##
+└── README.md                          ## <Information To Be Released Soon> ##
 ```
+
+
 ## 📚 License
 1. Some parts of the personal project that contains the code only for the web-app itself (excluding resources such as images, typed-works, codes, and any other such of mine) is licensed under [***GPL v3 LICENSE***](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE#L8).
 
 2. However, some resources / materials that is excluded from the ***GPLv3 that is mentioned from the first note*** is licensed under the ***Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License***. To view a copy of this license, visit the [***Website***](http://creativecommons.org/licenses/by-nc-nd/4.0/) or check the [***LICENSE***](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE#L689) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 ## 🤝 Contributing
+-Contributions are welcome. But technically, contributions are accepted within the boundaries of the resources. Meaning, I do accept mostly related in the codebase. But if for instance, content needs to be changed, you could request a **Pull Request** to pertain what should be changed, along with the changes that you want. Or contact me directly by [twitter](https://twitter.com/@CodexLink).
+
+Though, any opinionated thoughts that would lead to being biased should keep to ourselves, if for instance, you don't certainly agree to the things that I might say.
+
+## Frequently Asked Questions
 
 ## 🌇 👍 Inspiration
 
