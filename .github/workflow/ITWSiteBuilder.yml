@@ -6,7 +6,7 @@
 # -   Because for every commit, the changes are being built by the Github Pages automatically.
 
 ## Add ESLINTER here soon.
-
+## Add Prettier here soon.
 name: Gatsby-Powered ITW Publisher CI
 on:
   push: worker-branch
