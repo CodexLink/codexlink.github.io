@@ -38,9 +38,9 @@
 |
 ```
 ## 📚 License
-1. Some parts of the personal project that contains the code only for the web-app itself (excluding resources such as images, typed-works, codes, and any other such of mine) is licensed under [***GPL v3 LICENSE***](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE).
+1. Some parts of the personal project that contains the code only for the web-app itself (excluding resources such as images, typed-works, codes, and any other such of mine) is licensed under [***GPL v3 LICENSE***](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE#L8).
 
-2. However, some resources / materials that is excluded from the ***GPLv3 that is mentioned from the first note*** is licensed under the ***Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License***. To view a copy of this license, visit the [***Website***](http://creativecommons.org/licenses/by-nc-nd/4.0/) or check the [***LICENSE***](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+2. However, some resources / materials that is excluded from the ***GPLv3 that is mentioned from the first note*** is licensed under the ***Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License***. To view a copy of this license, visit the [***Website***](http://creativecommons.org/licenses/by-nc-nd/4.0/) or check the [***LICENSE***](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE#L689) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 ## 🤝 Contributing
 
