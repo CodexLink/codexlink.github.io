@@ -33,7 +33,7 @@
     "@material/animation": "^5.1.0",
     "babel-plugin-styled-components": "^1.10.7",
     "babel-preset-env": "^1.7.0",
-    "gatsby": "^2.20.12",
+    "gatsby": "^2.20.13",
     "gatsby-image": "^2.3.2",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-material-ui": "^2.1.6",
