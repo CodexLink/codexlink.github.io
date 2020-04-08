@@ -38,44 +38,52 @@ If you really want to know what's inside of this project, then take a look here.
 ├── <Excluded>
 ├── .github
 │   └── workflow
-│       ├── ITWSiteBuilder.yml         ## <Information To Be Released Soon> ##
-│       └── PRLabeller.yml             ## <Information To Be Released Soon> ##
+│       ├── ITWSiteBuilder.yml  # An Action Workflow File dedicated to automate publishing of site in master branch.
+│       └── PRLabeller.yml      # An Action Workflow File dedicated to automate labelling of each PR.
+│
 ├── <Excluded>
 ├── <Excluded>
 ├── src
 │   ├── components
-│   │   └── *.md                       ## <Information To Be Released Soon> ##
+│   │   └── *.md                  # Information Not Disclosed. Further Changes Ahead.
 │   │
 │   ├── pages
-│   │   ├── blogNotes                  ## <Information To Be Released Soon> ##
-│   │   │   └── *.md                   ## <Information To Be Released Soon> ##
-│   │   ├── projectNotes               ## <Information To Be Released Soon> ##
-│   │   │   └── *.md                   ## <Information To Be Released Soon> ##
-│   │   ├── (...)Notes                 ## <Information To Be Released Soon> ##
-│   │   │   └── *.md                   ## <Information To Be Released Soon> ##
-│   │   └── *.js                       ## <Information To Be Released Soon> ##
+│   │   ├── blogNotes             # Literally Blog Notes in Markdown. Contains Encrypted.
+│   │   │   └── *.md
+│   │   │
+│   │   ├── projectNotes          # Literally Project Notes in Markdown. Contains Encrypted.
+│   │   │   └── *.md
+│   │   │
+│   │   ├── (...)Notes            # Literally Blog Notes in Markdown. Contains Encrypted.
+│   │   │   └── *.md
+│   │   │
+│   │   └── *.js                  # JS Files That Is Accessible in Web App by Calling Their Names Explicitly.
 │   │
 │   ├── resources
-│   │   ├── misc                       ## <Information To Be Released Soon> ##
-│   │   │   └── *.md                   ## <Information To Be Released Soon> ##
-│   │   └── images                     ## <Information To Be Released Soon> ##
-│   │       └── *.md                   ## <Information To Be Released Soon> ##
-│   ├── styles
-│       └── *.md                       ## <Information To Be Released Soon> ##
-│   ├── templates
-│       └── *.md                       ## <Information To Be Released Soon> ##
-│   └── utils
-│       └── *.md                       ## <Information To Be Released Soon> ##
+│   │   ├── misc                  # Contains unclassfied extension files.
+│   │   │   └── * ???
+│   │   │
+│   │   └── images                # Contains image that may contain multiple extension candidated below.
+│   │       └── *.md / img / jpg / jpeg / png / gif
+│   │
+│   ├── styles                    # A Folder that contains all stylesheet or JS Theme Generated.
+│   │   └── *.js / css / scss
+│   │
+│   ├── templates                 # Contains JS Files That is the same from ../pages/ but used as Specific Content Rendering.
+│   │   └── *.js
+│   │
+│   └── utils                     # A folder that may contains JS files that contains specific configuration. contenets.
+│       └── *.js                  # JS files that contains particular configurations for specific situations.
 │
-├── .prettierrc                        ## <Information To Be Released Soon> ##
-├── gatsby-browser.js                  ## <Information To Be Released Soon> ##
-├── gatsby-config.js                   ## <Information To Be Released Soon> ##
-├── gatsby-node.js                     ## <Information To Be Released Soon> ##
-├── gatsby-ssr.js                      ## <Information To Be Released Soon> ##
-├── LICENSE                            ## <Information To Be Released Soon> ##
-├── package-lock.json                  ## <Information To Be Released Soon> ##
-├── package.json                       ## <Information To Be Released Soon> ##
-└── README.md                          ## <Information To Be Released Soon> ##
+├── .prettierrc                   # Prettier Local File Configuration To Be Used by the NPM Plugin.
+├── gatsby-browser.js             # Information To Be Released Soon.
+├── gatsby-config.js              # Gatsby Configuration File.
+├── gatsby-node.js                # Gatsby NodeJS API Accessible File.
+├── gatsby-ssr.js                 # Gatsby Server Side Rendering API Accessible File.
+├── LICENSE                       # LICENSE File of REPO Containing GPL v3.0 and CC-BY-NC-ND-4.0.
+├── package-lock.json             # Generated File Metadata for NPM Packages.
+├── package.json                  # File Used by NPM To Which Declares The Use of JS Packages.
+└── README.md                     # A file that contains of what you are currently reading at.
 ```
 
 
@@ -85,9 +93,9 @@ If you really want to know what's inside of this project, then take a look here.
 2. However, some resources / materials that is excluded from the ***GPLv3 that is mentioned from the first note*** is licensed under the ***Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License***. To view a copy of this license, visit the [***Website***](http://creativecommons.org/licenses/by-nc-nd/4.0/) or check the [***LICENSE***](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE#L689) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 ## 🤝 Contributing
--Contributions are welcome. But technically, contributions are accepted within the boundaries of the resources. Meaning, I do accept mostly related in the codebase. But if for instance, content needs to be changed, you could request a **Pull Request** to pertain what should be changed, along with the changes that you want. Or contact me directly by [twitter](https://twitter.com/@CodexLink).
+- Contributions are always welcome. But technically, contributions are accepted within the boundaries of the resources. Meaning, I do accept contributions mostly related in the codebase. But if for instance, specific content needs to be changed, you could request a **Pull Request** to point what should be changed, along with the changes that you want. Or contact me directly by [twitter](https://twitter.com/@CodexLink).
 
-Though, any opinionated thoughts that would lead to being biased should keep to ourselves, if for instance, you don't certainly agree to the things that I might say.
+- Though, any opinionated thoughts that would lead to being biased at any point of the topic should keep to ourselves, if for instance, you don't certainly agree to the things that I might say.
 
 ## Frequently Asked Questions
 
