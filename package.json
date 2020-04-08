@@ -58,7 +58,7 @@
     "gatsby-source-github-api": "^0.2.1",
     "gh-pages": "^2.2.0",
     "js-base64": "^2.5.2",
-    "prettier": "^2.0.3"
+    "prettier": "^2.0.4"
   },
   "optionalDependencies": {
     "typeface-roboto": "0.0.75",
