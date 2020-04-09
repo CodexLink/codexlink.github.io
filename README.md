@@ -12,6 +12,7 @@
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/codexlink/codexlink.github.io/worker-branch?label=CodeFactor%20Code%20Quality&logo=codefactor&logoColor=white)
 ![Codacy Branch Grade](https://img.shields.io/codacy/grade/cb1d8498bf654fba98104802a2e3eb5c/worker-branch?label=Codacy%20Code%20Quality&logo=codacy&logoColor=White)
 ![GitHub License](https://img.shields.io/github/license/CodexLink/codexlink.github.io?color=purple&label=Repo%20License)
+
 </div>
 
 <div align="center">
@@ -24,8 +25,8 @@
 </div>
 
 ## ❓ ❗ What the hell is even this
-Hey, welcome to my personal project! This is a repository of my first web app from which I showcase everything that I have, other than from any social media. What's with the unusual README design? Well, I try to make things presentable. Due to how I'm gonna be documenting mostly everything here in this case.
 
+Hey, welcome to my personal project! This is a repository of my first web app from which I showcase everything that I have, other than from any social media. What's with the unusual README design? Well, I try to make things presentable. Due to how I'm gonna be documenting mostly everything here in this case.
 
 ## 💁 Introduction
 
@@ -86,16 +87,17 @@ If you really want to know what's inside of this project, then take a look here.
 └── README.md                     # A file that contains of what you are currently reading at.
 ```
 
-
 ## 📚 License
-1. Some parts of the personal project that contains the code only for the web-app itself (excluding resources such as images, typed-works, codes, and any other such of mine) is licensed under [***GPL v3 LICENSE***](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE#L8).
 
-2. However, some resources / materials that is excluded from the ***GPLv3 that is mentioned from the first note*** is licensed under the ***Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License***. To view a copy of this license, visit the [***Website***](http://creativecommons.org/licenses/by-nc-nd/4.0/) or check the [***LICENSE***](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE#L689) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+1. Some parts of the personal project that contains the code only for the web-app itself (excluding resources such as images, typed-works, codes, and any other such of mine) is licensed under [**_GPL v3 LICENSE_**](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE#L8).
+
+2. However, some resources / materials that is excluded from the **_GPLv3 that is mentioned from the first note_** is licensed under the **_Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License_**. To view a copy of this license, visit the [**_Website_**](http://creativecommons.org/licenses/by-nc-nd/4.0/) or check the [**_LICENSE_**](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE#L689) or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 ## 🤝 Contributing
-- Contributions are always welcome. But technically, contributions are accepted within the boundaries of the resources. Meaning, I do accept contributions mostly related in the codebase. But if for instance, specific content needs to be changed, you could request a **Pull Request** to point what should be changed, along with the changes that you want. Or contact me directly by [twitter](https://twitter.com/@CodexLink).
 
-- Though, any opinionated thoughts that would lead to being biased at any point of the topic should keep to ourselves, if for instance, you don't certainly agree to the things that I might say.
+-   Contributions are always welcome. But technically, contributions are accepted within the boundaries of the resources. Meaning, I do accept contributions mostly related in the codebase. But if for instance, specific content needs to be changed, you could request a **Pull Request** to point what should be changed, along with the changes that you want. Or contact me directly by [twitter](https://twitter.com/@CodexLink).
+
+-   Though, any opinionated thoughts that would lead to being biased at any point of the topic should keep to ourselves, if for instance, you don't certainly agree to the things that I might say.
 
 ## Frequently Asked Questions
 
