@@ -1,13 +1,5 @@
-import React, { Component } from 'react';
-//import ... ?
+import React, { Component } from "react"
+export default function FooterModularComponent(props) {
+    return "Hey! This is footer. A modular component!"
 
-export default class FooterComponent extends Component {
-    constructor(props) {
-        super(props)
-    }
-    // render() {
-    //     return (
-
-    //     )
-    // }
 }

@@ -1,22 +1,18 @@
-import React, { Component } from "react";
-//import compQueries from ".../reusables/hooks/compQueries"
+import React, { Fragment } from "react"
 import { ThemeProvider } from "@material-ui/core/styles"
 import AmbicMUI from "../../styles/theme"
-import { TitleQuery } from "../../reusables/hooks/compQueries"
 import { Helmet } from "react-helmet"
+import { UseQueryAuthor } from "../../reusables/hooks/componentsQuerySet"
+import PropTypes from "prop-types"
+import { HeaderBar } from "../modulars"
 
 // @promise | Create Enum Class To Which What Kind of Content To Init.
-export default class LiteralHeader extends Component {
-    constructor(props) {
-        super(props)
-        this.initMetaData(props)
-    }
-
-    initMetaData({ props }) {
-        const MetaData = TitleQuery()
-        return (
+export default function HeaderComponent(props) {
+    const MetaData = UseQueryAuthor()
+    return (
+        <Fragment>
             <Helmet
-                title={`${MetaData.title} | By ${MetaData.author}`}
+                title={`${props.titleContentContext} | By ${MetaData.author}`}
                 charSet="utf-8"
                 defer={false}
             >
@@ -25,14 +21,15 @@ export default class LiteralHeader extends Component {
                     content="minimum-scale=1, initial-scale=1, width=device-width"
                 />
             </Helmet>
-        )
-    }
-
-    render() {
-        return (
             <ThemeProvider theme={AmbicMUI}>
-
+                <HeaderBar />
+                {props.children}
             </ThemeProvider>
-        )
-    }
+        </Fragment>
+    )
+}
+
+HeaderComponent.propTypes = {
+    titleContentContext: PropTypes.string,
+    children: PropTypes.node
 }

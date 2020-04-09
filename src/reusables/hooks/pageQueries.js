@@ -1,1 +1,0 @@
-import { useStaticQuery } from "gatsby";
