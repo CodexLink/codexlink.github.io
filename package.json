@@ -1,5 +1,5 @@
 {
-  "name": "written-works",
+  "name": "inst-typed-works",
   "license": "GPL-3.0",
   "repository": "github:CodexLink/SignedWrittenWorks",
   "version": "0.1.0",
@@ -55,6 +55,7 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "eslint-plugin-react-hooks": "^3.0.0",
     "gatsby-source-github-api": "^0.2.1",
     "gh-pages": "^2.2.0",
     "js-base64": "^2.5.2",
@@ -78,6 +79,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Writing tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Writing tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "redevelop": "gatsby clean && gatsby develop",
+    "debug-redevelop": "gatsby clean && node --nolazy --inspect-brk node_modules\\gatsby\\dist\\bin\\gatsby.js develop"
   }
 }
