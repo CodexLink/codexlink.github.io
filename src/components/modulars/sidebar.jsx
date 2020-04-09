@@ -13,7 +13,7 @@ import {
 
 } from "@material-ui/core"
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles"
-import CustomMUI from "../styles/theme"
+import CustomMUI from "../../styles/theme"
 
 const SideDrawerStyleSheet = makeStyles(InjectElem => ({
     list: {
