@@ -4,6 +4,7 @@ module.exports = {
         title_secondary: `I.T.W`,
         description: `Kickstarted React Application that comes with Blogging, Written Works and Portfolio in mind.`,
         author: `CodexLink`,
+        repo: `CodexLink/codexlink.github.io`,
         author_name: `Janrey Licas`,
         socials: {
             facebook: `facebookCodexLink`,
@@ -36,7 +37,7 @@ module.exports = {
                         start_url: `/ph/`,
                         name: `inst-typed-works`,
                         short_name: `Instantiated Typed Works`,
-                        description: `Ang isang uring-web app na naglalaman ng portpolyo, proyekto at mga blogs. Mga nilalaman ay itinatangi at nabuo sa paaran ng pag type. Ito'y binubuhay gamit ang ReactJS, GatsbyJS, Material-UI at iba pa!`
+                        description: `Ang isang uring-web app na naglalaman ng portpolyo, proyekto at mga blogs. Mga nilalaman ay itinatangi at nabuo sa paaran ng pag type. Ito'y binubuhay gamit ang ReactJS, GatsbyJS, Material-UI at iba pa!`,
                     },
                 ],
             },
