@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import DefaultTest from "../components/container"
+import DefaultTest from "../components/presets/container"
 import { Helmet } from "react-helmet"
 
 export default () => (
