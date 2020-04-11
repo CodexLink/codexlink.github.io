@@ -28,6 +28,30 @@
 
 Hey, welcome to my personal project! This is a repository of my first web app from which I showcase everything that I have, other than from any social media. What's with the unusual README design? Well, I try to make things presentable. Due to how I'm gonna be documenting mostly everything here in this case.
 
+## 📑 Table of Contents
+
+README Content is Not Yet Finalized. Coming Soon...
+
+## 🏩 🔥 Consumed Libraries
+
+There are multiple libraries that is consumed by this Web App. I could have told you right now to check my [***Package.JSON***](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/package.json) to know which libraries have been consumed. But to make things a bit friendly, here are the following libraries along with their descriptions of the purpose of why I needed them.
+
+### Production Dependencies
+
+-
+
+### Development Dependencies
+
+-
+
+### Optional Dependencies
+
+-
+
+### Gatsby Plugin Dependencies
+
+-
+
 ## 🗄📁 File Structure | Quite Outdated
 
 If you really want to know what's inside of this project, then take a look here. It comes along with labels and detailed information about that particular files. Any excluded files included in `.gitignore` will not be shown here but rather flagged as `Excluded`.
@@ -85,7 +109,29 @@ If you really want to know what's inside of this project, then take a look here.
 └── README.md                     # A file that contains of what you are currently reading at.
 ```
 
-## 📚 License
+## Installation
+
+1. If you really want to render this project locally, you must install the following.
+
+```text
+... Coming Soon.
+```
+
+## 🔂 💻 Deployment
+
+```text
+Coming Soon.
+```
+
+## 🏡  Repository Template
+
+After working on this project. I'll be trying to create a template repository that most of you saw here. That includes setups, along with folders renamed as how my app was structured.
+
+```text
+But that would be soon enough.
+```
+
+## 📚 About The Licenses
 
 1. Some parts of the personal project that contains the code only for the web-app itself (excluding resources such as images, typed-works, codes, and any other such of mine) is licensed under [**_GPL v3 LICENSE_**](https://github.com/CodexLink/codexlink.github.io/blob/worker-branch/LICENSE#L8).
 
@@ -93,11 +139,11 @@ If you really want to know what's inside of this project, then take a look here.
 
 ## 🤝 Contributing
 
--   Contributions are always welcome. But technically, contributions are accepted within the boundaries of the resources. Meaning, I do accept contributions mostly related in the codebase. But if for instance, specific content needs to be changed, you could request a **Pull Request** to point what should be changed, along with the changes that you want. Or contact me directly by [twitter](https://twitter.com/@CodexLink).
+- Contributions are always welcome. But technically, contributions are accepted within the boundaries of the resources. Meaning, I do accept contributions mostly related in the codebase. But if for instance, specific content needs to be changed, you could request a **Pull Request** to point what should be changed, along with the changes that you want. Or contact me directly by [Twitter](https://twitter.com/@CodexLink).
 
--   Though, any opinionated thoughts that would lead to being biased at any point of the topic should keep to ourselves, if for instance, you don't certainly agree to the things that I might say.
+- Though, any opinionated thoughts that would lead to being biased at any point of the topic should keep to ourselves, if for instance, you don't certainly agree to the things that I might say.
 
-## Frequently Asked Questions
+## ❔ Frequently Asked Questions
 
 ## 🌇 👍 Inspiration
 
