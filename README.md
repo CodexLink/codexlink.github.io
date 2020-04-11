@@ -8,7 +8,7 @@
 </div>
 <div align="center">
 
-![Code Formatter](https://img.shields.io/badge/Code%20Formatter-Prettier-blueviolet?logo=prettier&&logoColor=white)
+![Code Formatter](https://img.shields.io/badge/Code%20Formatter-Prettier-blueviolet?logo=prettier&&logoColor=white&&color=ff69b4)
 ![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/codexlink/codexlink.github.io/worker-branch?label=CodeFactor%20Code%20Quality&logo=codefactor&logoColor=white)
 ![Codacy Branch Grade](https://img.shields.io/codacy/grade/cb1d8498bf654fba98104802a2e3eb5c/worker-branch?label=Codacy%20Code%20Quality&logo=codacy&logoColor=White)
 ![GitHub License](https://img.shields.io/github/license/CodexLink/codexlink.github.io?color=purple&label=Repo%20License)
@@ -24,13 +24,11 @@
 
 </div>
 
-## ❓ ❗ What the hell is even this
+## What the hell is even this ❓ ❗ — 💁 Introduction
 
 Hey, welcome to my personal project! This is a repository of my first web app from which I showcase everything that I have, other than from any social media. What's with the unusual README design? Well, I try to make things presentable. Due to how I'm gonna be documenting mostly everything here in this case.
 
-## 💁 Introduction
-
-## 🗄📁 File Structure
+## 🗄📁 File Structure | Quite Outdated
 
 If you really want to know what's inside of this project, then take a look here. It comes along with labels and detailed information about that particular files. Any excluded files included in `.gitignore` will not be shown here but rather flagged as `Excluded`.
 
