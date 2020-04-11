@@ -27,6 +27,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@hot-loader/react-dom": "^16.13.0",
     "@material-ui/core": "^4.9.9",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.9.6",
@@ -53,6 +54,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
+    "react-hot-loader": "^4.12.20",
     "react-masonry-component": "^6.2.1",
     "styled-components": "^5.1.0",
     "typescript": "^3.8.3"
