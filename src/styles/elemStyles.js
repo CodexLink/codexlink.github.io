@@ -17,14 +17,17 @@ export const AppBarStyles = makeStyles((ElemProps) => ({
 }))
 
 // ! SideBar StyleSheet Injection
-export const SideBarStyles = makeStyles((SideProps) => ({
-    root: {
-        flexGrow: 1,
+export const SideBarStyles = makeStyles((ElemeProps) => ({
+    sideBarWidth: {
+        width: 250,
+    },
+    fullListWidth: {
+        width: 'auto',
     },
 }))
 
 // ! Card StyleSheet Injection
-export const CardStyles = makeStyles((GivenProps) => ({
+export const CardStyles = makeStyles((ElemProps) => ({
     root: {
         flexGrow: 1,
     },

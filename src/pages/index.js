@@ -4,28 +4,25 @@ import {
     Container as ContentContainer,
     Header as AppHeader,
 } from "../components/presets/"
-import { indexQuery } from "../reusables/hooks/pagesQuerySet"
+import { graphql } from "gatsby"
+
 import "typeface-roboto-mono"
 
-const queryIndexMeta = indexQuery
+export const queryIndexMeta = graphql`
+query pageQueryIndex {
+    site {
+        ...minimumSiteMeta
+    }
+}
+`
 
 export default function IndexPage(data) {
-    console.log(data)
     return (
         <Fragment>
             <CssBaseline />
             <AppHeader titleContentContext={data.data.site.siteMetadata.title} />
-            {/* <AppHeader titleContentContext="Test" /> */}
             <ContentContainer>Hellow World</ContentContainer>
         </Fragment>
     )
 
 }
-
-// export const query = graphql`
-// query pageTempQuery {
-//     site {
-//         ...minimumSiteMeta
-//     }
-// }
-//`

@@ -1,16 +1,34 @@
-import React, { Fragment } from "react"
+import React, { Fragment, useState } from "react"
 import { ThemeProvider } from "@material-ui/core/styles"
 import AmbicMUI from "../../styles/theme"
 import { Helmet } from "react-helmet"
-import { UseQueryAuthor } from "../../reusables/hooks/componentsQuerySet"
+import { UseQueryAuthor } from "../../reusables/hooks/componentsQuerySets"
 import PropTypes from "prop-types"
 import { HeaderBar } from "../modulars"
+import { SwipeableDrawer } from "@material-ui/core"
+import { SideBarStyles } from "../../styles/elemStyles"
 
-// @promise | Create Enum Class To Which What Kind of Content To Init.
 export default function HeaderComponent(props) {
+    const SidebarStyleSheet = SideBarStyles
     const MetaData = UseQueryAuthor()
+    const sideContentStyles = SidebarStyleSheet()
+
+    const [drawerState, setDrawerState] = useState(false)
+
+    const emitDrawerEvent = (stateRequest) => (event) => {
+        if (
+            event &&
+            event.type === "keydown" &&
+            (event.key === "Tab" || event.key === "Shift")
+        ) {
+            return;
+        }
+
+        setDrawerState(stateRequest)
+    }
+
     return (
-        <Fragment>
+        <Fragment key={HeaderComponent.name}>
             <Helmet
                 title={`${props.titleContentContext} | By ${MetaData.author}`}
                 charSet="utf-8"
@@ -22,14 +40,23 @@ export default function HeaderComponent(props) {
                 />
             </Helmet>
             <ThemeProvider theme={AmbicMUI}>
-                <HeaderBar />
-                {props.children}
+                <HeaderBar DrawerHandler={emitDrawerEvent} />
+                <Fragment key="SidebarModularComponent">
+                    <SwipeableDrawer anchor="left" open={drawerState} width={sideContentStyles.sideBarWidth} onOpen={emitDrawerEvent(true)} onClose={emitDrawerEvent(false)}></SwipeableDrawer>
+                </Fragment>
             </ThemeProvider>
         </Fragment>
     )
 }
 
 HeaderComponent.propTypes = {
-    titleContentContext: PropTypes.string,
-    children: PropTypes.node
+    titleContentContext: PropTypes.string.isRequired,
+    isDrawerRequired: PropTypes.bool,
+    drawerContext: PropTypes.node
+}
+
+HeaderComponent.defaultProps = {
+    titleContentContext: "",
+    isDrawerRequired: true,
+
 }
