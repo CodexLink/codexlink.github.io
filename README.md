@@ -54,9 +54,9 @@ There are multiple libraries that is consumed by this Web App. I could have told
 
 ## 🗄📁 File Structure | Quite Outdated
 
-If you really want to know what's inside of this project, then take a look here. It comes along with labels and detailed information about that particular files. Any excluded files included in `.gitignore` will not be shown here but rather flagged as `Excluded`.
+If you really want to know what's inside of this project, then take a look here. It comes along with labels and detailed information about those particular files. Any excluded files included in `.gitignore` will not be shown here but rather flagged as `Excluded`.
 
-```
+```text
 . <Repo Root Folder>
 ├── <Excluded>
 ├── .github
