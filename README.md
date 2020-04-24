@@ -3,7 +3,7 @@
 
 <div align="center">
 
-![Website](https://img.shields.io/website?down_color=red&down_message=ff1744&label=Website%20Status&logo=gatsby&logoColor=white&up_color=brightgreen&up_message=Online&url=https%3A%2F%2Finst-typed.works%2F)
+![Website](https://img.shields.io/website?down_color=red&down_message=Offline&label=Website%20Status&logo=gatsby&logoColor=white&up_color=brightgreen&up_message=Online&url=https%3A%2F%2Finst-typed.works%2F)
 
 </div>
 <div align="center">
