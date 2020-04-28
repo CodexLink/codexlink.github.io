@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useMemo } from "react"
 import {
     AppBar,
     Box,
@@ -15,8 +15,10 @@ import {
     Flare,
     GitHub,
 } from "@material-ui/icons"
-import PropTypes from "prop-types"
 
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
+
+import PropTypes from "prop-types"
 import { AppBarStyles } from "../../styles/elemStyles"
 import { UseQueryAuthor } from "../../reusables/hooks/componentsQuerySets"
 
@@ -27,65 +29,69 @@ export default function AppBarModularComponent(props) {
 
     const titleDisplay = useMediaQuery("(min-width:500px)") ? headerTitleQuery.title : headerTitleQuery.title_secondary
 
+    const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+
+    const theme = React.useMemo(
+        () =>
+            createMuiTheme({
+                palette: {
+                    type: prefersDarkMode ? 'dark' : 'light',
+                },
+            }),
+        [prefersDarkMode],
+    );
+    console.log(prefersDarkMode)
+
     return (
-        <AppBar position="sticky" color="primary">
-            <Toolbar>
-                <IconButton
-                    edge="start"
-                    color="inherit"
-                    onClick={props.DrawerHandler(true)}
-                    className={headerStyles.menuButton}
-                    aria-label="menu"
-                >
-                    <Menu />
-                </IconButton>
-                <Typography
-                    variant="h6"
-                    className={headerStyles.appTitle}
-                >
-                    {titleDisplay}
-                </Typography>
-                <Tooltip title="Toggle Dark / Light Mode" arrow>
+        <ThemeProvider theme={theme}>
+            <AppBar position="sticky" color="primary">
+                <Toolbar>
                     <IconButton
                         edge="start"
                         color="inherit"
-                        className={
-                            headerStyles.buttonModifiers
-                        }
-                        aria-label="theme-toggler"
+                        onClick={props.DrawerHandler(true)}
+                        className={headerStyles.menuButton}
+                        aria-label="menu"
                     >
-                        <Flare />
+                        <Menu />
                     </IconButton>
-                </Tooltip>
-                <Tooltip
-                    title="Open Github Repo Of This Web App"
-                    arrow
-                >
-                    <IconButton
-                        edge="start"
-                        color="inherit"
-                        target="__target"
-                        rel="noopener noreferrer"
-                        href="https://github.com/CodexLink/codexlink.github.io"
-                        className={
-                            headerStyles.buttonModifiers
-                        }
-                        aria-label="repo-redirector"
+                    <Typography
+                        variant="h6"
+                        className={headerStyles.appTitle}
                     >
-                        <GitHub />
-                    </IconButton>
-                </Tooltip>
-                <Tooltip title="More..." arrow>
-                    <IconButton
-                        edge="start"
-                        color="inherit"
-                        aria-label="web-app-info-spreader"
+                        {titleDisplay}
+                    </Typography>
+                    <Tooltip title="Toggle Dark / Light Mode" arrow>
+                        <IconButton
+                            edge="start"
+                            color="inherit"
+                            className={
+                                headerStyles.buttonModifiers
+                            }
+                            aria-label="theme-toggler"
+                            onClick={theme}
+                        >
+                            <Flare />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip
+                        title="Open Github Repo Of This Web App"
+                        arrow
                     >
-                        <MoreVert />
-                    </IconButton>
-                </Tooltip>
-            </Toolbar>
-        </AppBar>
+                        <IconButton
+                            edge="start"
+                            color="inherit"
+                            target="__target"
+                            rel="noopener noreferrer"
+                            href="https://github.com/CodexLink/codexlink.github.io"
+                            aria-label="repo-redirector"
+                        >
+                            <GitHub />
+                        </IconButton>
+                    </Tooltip>
+                </Toolbar>
+            </AppBar>
+        </ThemeProvider>
     )
 }
 

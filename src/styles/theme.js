@@ -1,16 +1,19 @@
 import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles"
 import { amber, orange, red } from "@material-ui/core/colors"
 
+// Create UI Context Receiver for
+
 let theme = createMuiTheme({
     palette: {
         primary: amber,
         secondary: red,
+        type: 'light',
     },
     status: {
         danger: orange,
     },
     typography: {
-        fontFamily: ['"Roboto Mono"'].join(","),
+        fontFamily: "Roboto Mono",
     },
     title: {
         flexGrow: 1,

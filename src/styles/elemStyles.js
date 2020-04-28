@@ -17,13 +17,21 @@ export const AppBarStyles = makeStyles((ElemProps) => ({
 }))
 
 // ! SideBar StyleSheet Injection
-export const SideBarStyles = makeStyles((ElemeProps) => ({
+export const DrawerStyles = makeStyles((ElemeProps) => ({
+    root: {
+        width: '100%',
+        maxWidth: 360,
+        backgroundColor: ElemeProps.palette.background.paper,
+    },
     sideBarWidth: {
-        width: 250,
+        width: 280,
     },
     fullListWidth: {
         width: 'auto',
     },
+    NestedLevelOne: {
+        paddingLeft: ElemeProps.spacing(4),
+    }
 }))
 
 // ! Card StyleSheet Injection

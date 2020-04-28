@@ -6,10 +6,11 @@ import { UseQueryAuthor } from "../../reusables/hooks/componentsQuerySets"
 import PropTypes from "prop-types"
 import { HeaderBar } from "../modulars"
 import { SwipeableDrawer } from "@material-ui/core"
-import { SideBarStyles } from "../../styles/elemStyles"
+import { DrawerStyles } from "../../styles/elemStyles"
+import { DrawerListContextMain } from "./drawerContexts"
 
 export default function HeaderComponent(props) {
-    const SidebarStyleSheet = SideBarStyles
+    const SidebarStyleSheet = DrawerStyles
     const MetaData = UseQueryAuthor()
     const sideContentStyles = SidebarStyleSheet()
 
@@ -42,7 +43,7 @@ export default function HeaderComponent(props) {
             <ThemeProvider theme={AmbicMUI}>
                 <HeaderBar DrawerHandler={emitDrawerEvent} />
                 <Fragment key="SidebarModularComponent">
-                    <SwipeableDrawer anchor="left" open={drawerState} width={sideContentStyles.sideBarWidth} onOpen={emitDrawerEvent(true)} onClose={emitDrawerEvent(false)}></SwipeableDrawer>
+                    <SwipeableDrawer anchor="left" open={drawerState} width={sideContentStyles.fullListWidth} onOpen={emitDrawerEvent(true)} onClose={emitDrawerEvent(false)}>{ DrawerListContextMain() }</SwipeableDrawer>
                 </Fragment>
             </ThemeProvider>
         </Fragment>
