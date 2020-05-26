@@ -32,7 +32,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.9.13",
     "@material/animation": "^6.0.0",
-    "@mdx-js/mdx": "^1.6.1",
+    "@mdx-js/mdx": "^1.6.4",
     "@mdx-js/react": "^1.6.1",
     "babel-plugin-styled-components": "^1.10.7",
     "babel-preset-env": "^1.7.0",
