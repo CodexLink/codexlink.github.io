@@ -65,7 +65,7 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.0.4",
     "gatsby-source-github-api": "^0.2.1",
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^3.0.0",
     "js-base64": "^2.5.2",
     "prettier": "^2.0.5"
   },
