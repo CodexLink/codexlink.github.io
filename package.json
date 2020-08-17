@@ -34,7 +34,7 @@
     "@material/animation": "^6.0.0",
     "@mdx-js/mdx": "^1.6.5",
     "@mdx-js/react": "^1.6.5",
-    "babel-plugin-styled-components": "^1.10.7",
+    "babel-plugin-styled-components": "^1.11.1",
     "babel-preset-env": "^1.7.0",
     "gatsby": "^2.24.25",
     "gatsby-plugin-manifest": "^2.4.21",
