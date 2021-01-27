@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Project Typed Works",
-  "author": "Janrey Licas",
+  "author": "Janrey 'CodexLink' Licas",
   "keywords": [
     "gatsby"
   ],
@@ -25,7 +25,9 @@
     "gatsby-plugin-sharp": "^2.13.2",
     "gatsby-plugin-sitemap": "^2.11.0",
     "gatsby-source-filesystem": "^2.10.0",
+    "gatsby-source-graphql": "^2.13.0",
     "gatsby-transformer-sharp": "^2.11.0",
+    "material-ui": "^0.20.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0"
