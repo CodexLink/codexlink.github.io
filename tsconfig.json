@@ -1,0 +1,20 @@
+{
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "**/*.spec.ts"],
+    "checkJs": true,
+    "declaration": true,
+    "declarationMap": true,
+    "alwaysStrict": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false, // debatable.
+    "compilerOptions": {
+        "declaration": true,
+        "declarationDir": "./def-types"
+      }
+
+}
