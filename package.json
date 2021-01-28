@@ -2,11 +2,13 @@
   "name": "project-typed-works",
   "version": "0.0.1-dev.1",
   "private": true,
-  "description": "My Personal Website (composed of my Portfolio, Projects and Blogging) Statically Generated with Gatsby, Context Delivered with GraphCMS, Content Delivered with Github Pages, Designed with Material-UI and Powered by React.",
-  "author": "Janrey 'CodexLink' Licas",
+  "description": "My Website (composed of my Portfolio, Projects, and Blogging) that is Statically Generated with Gatsby, Context Delivered with GraphCMS, Content Delivered with Github Pages, Designed with Material-UI and Powered by React.",
+  "author": "Janrey Licas <self.codexlink@gmail.com> (https://github.com/CodexLink)",
   "keywords": [
-    "gatsby"
+    "gatsby", "material-ui", "github-pages", "blog", "portfolio", "graphcms", "react"
   ],
+  "license": "(CC-BY-NC-ND 4.0 and GPL-3.0)",
+  "homepage": "https://codexlink.github.io"
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",

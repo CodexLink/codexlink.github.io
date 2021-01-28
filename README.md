@@ -1,5 +1,5 @@
 <h1 align="center"> 📚🎆 Typed Works (CodexLink Site) ✔️ ⌨</h1>
-<h4 align="center"><i>My Personal Website (composed of my Portfolio, Projects and Blogging) Statically Generated with <a href="https://gatsbyjs.org/">Gatsby</a>, Context Delivered with <a href="https://graphcms.com/">GraphCMS</a>, Content Delivered with <a href="https://pages.github.com/">Github Pages</a>, Designed with <a href="https://material-ui.com/">Material-UI</a> and Powered by <a href="https://reactjs.org/">React</a>.</i></h4>
+<h4 align="center"><i>My Website (composed of my Portfolio, Projects, and Blogging) that is Statically Generated with <a href="https://gatsbyjs.org/">Gatsby</a>, Context Delivered with <a href="https://graphcms.com/">GraphCMS</a>, Content Delivered with <a href="https://pages.github.com/">Github Pages</a>, Designed with <a href="https://material-ui.com/">Material-UI</a> and Powered by <a href="https://reactjs.org/">React</a>.</i></h4>
 
 <div align="center">
 
