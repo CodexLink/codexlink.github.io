@@ -9,7 +9,7 @@ module.exports = {
     portfolioTitle: "%s | %s's Portfolio",
     githubUsername: "CodexLink",
     tagline: "Unknown for now.",
-    aboutDescription: "My Website (composed of my Portfolio, Projects, and Blogging) that is Statically Generated with Gatsby, Context Delivered with GraphCMS, Content Delivered with Github Pages, Designed with Material-UI and Powered by React.",
+    aboutDescription: "My Website (composed of my Portfolio, Projects, and Blogging) that is Statically Generated with Gatsby, Context Written with MDX, Content Delivered with Github Pages, Designed with Material-UI and Powered by React.",
     ownerName: "Janrey Licas",
     ownerEmail: "self.codexlink@gmail.com",
     siteVersion: "0.0.1-dev.1"
@@ -31,7 +31,13 @@ module.exports = {
         background_color: "#f7f0eb",
         theme_color: "#a2466c",
         display: "standalone",
-        icon: ".src/assets/images/icon.png"
+        icon: "./src/content/assets/images/icon.png"
+      }
+    },
+    {
+      resource: "gatsby-plugin-mdx",
+      options: {
+        extensions: [".mdx", ".md"]
       }
     },
     {
@@ -71,17 +77,16 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "assets",
-        path: "./src/assets/",
+        path: "./src/content",
       },
     },
     {
-      resolve: "gatsby-source-graphql",
+      resolve: "gatsby-source-filesystem",
       options: {
-        typeName: "GraphCMS",
-        fieldName: "gcmSchema",
-        url: process.env.GRAPHCMS_API_URL
-      }
+        name: "assets",
+        path: "./src/pages",
+      },
     },
     "gatsby-transformer-sharp"
   ],
-};
+}

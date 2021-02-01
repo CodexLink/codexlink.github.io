@@ -13,6 +13,7 @@
     "noUnusedParameters": true,
     "allowUnreachableCode": false, // debatable.
     "compilerOptions": {
+        "jsx": "react",
         "declaration": true,
         "declarationDir": "./def-types"
       }

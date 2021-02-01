@@ -5,10 +5,16 @@
   "description": "My Website (composed of my Portfolio, Projects, and Blogging) that is Statically Generated with Gatsby, Context Delivered with GraphCMS, Content Delivered with Github Pages, Designed with Material-UI and Powered by React.",
   "author": "Janrey Licas <self.codexlink@gmail.com> (https://github.com/CodexLink)",
   "keywords": [
-    "gatsby", "material-ui", "github-pages", "blog", "portfolio", "graphcms", "react"
+    "gatsby",
+    "material-ui",
+    "github-pages",
+    "blog",
+    "portfolio",
+    "mdx",
+    "react"
   ],
   "license": "(CC-BY-NC-ND 4.0 and GPL-3.0)",
-  "homepage": "https://codexlink.github.io"
+  "homepage": "https://codexlink.github.io",
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
@@ -21,10 +27,12 @@
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@types/prop-types": "^15.7.3",
+    "@types/react-helmet": "^6.1.0",
     "dotenv": "^8.2.0",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.10.0",
     "gatsby-plugin-manifest": "^2.11.0",
+    "gatsby-plugin-mdx": "^1.9.0",
     "gatsby-plugin-offline": "^3.9.0",
     "gatsby-plugin-react-helmet": "^3.9.0",
     "gatsby-plugin-scroll-reveal": "^0.0.7",
@@ -32,7 +40,6 @@
     "gatsby-plugin-sitemap": "^2.11.0",
     "gatsby-plugin-typescript": "^2.11.0",
     "gatsby-source-filesystem": "^2.10.0",
-    "gatsby-source-graphql": "^2.13.0",
     "gatsby-transformer-sharp": "^2.11.0",
     "material-ui": "^0.20.2",
     "prop-types": "^15.7.2",
