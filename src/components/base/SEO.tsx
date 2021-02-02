@@ -3,67 +3,69 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
-
-const SEO = ({ title, description, image, article }) => {
-    const { pathname } = useLocation()
-    const { site } = useStaticQuery(metaDataQuery)
-
-    const {
-        mainTitle,
-        githubUsername,
-        tagline,
-        aboutDescription,
-        ownerName,
-        ownerEmail,
-        siteVersion
-    } = site.siteMetadata
-
-    const seo = {
-        mainTitle: title || mainTitle
-        githubUsername:
-        tagline:
-        aboutDescription:
-        ownerName:
-        ownerEmail:
-        siteVersion:
-
-        title: title || defaultTitle,
-        description: description || defaultDescription,
-        image: `${siteUrl}${image || defaultImage}`,
-        url: `${siteUrl}${pathname}`,
-      }
-
-    return null
-}
-
-export default SEO
+import { ExportedMetaData, EnsuredMetaDataHeader } from "./staticChecking/interfaces"
+import { contentContexts as ContentType } from "./staticChecking/types"
 
 const metaDataQuery = graphql`
     query SEOQuery {
         site {
             siteMetadata {
-                mainTitle
-                githubUsername
+                contentTitle
+                aboutSite
                 tagline
-                aboutDescription
-                ownerName
-                ownerEmail
-                siteVersion
+                userInfo
             }
         }
     }
 `
 
-SEO.propTypes = {
-  title: PropTypes.string,
-  description: PropTypes.string,
-  image: PropTypes.string,
-  article: PropTypes.bool,
+const SEO = ({ title, contextType, description }: { title: string, contextType: ContentType, description: string }): JSX.Element => {
+
+    const { pathname: urlPath } = useLocation()
+    const { site: siteContext } = useStaticQuery(metaDataQuery)
+
+    const {
+        contentTitle,
+        urlSite,
+        aboutSite,
+        tagline,
+        userInfo,
+    } = siteContext.siteMetadata as ExportedMetaData
+
+    const metaHeader: EnsuredMetaDataHeader = {
+        title: title,
+        tagline: tagline,
+        description: description,
+        aboutTheSite: aboutSite,
+        userInfo: `${userInfo.ownerName} (${userInfo.githubInfo})`,
+        url: new URL(`${urlSite}/${urlPath})`)
+    }
+
+    // todo: Implement More Complex Meta tags.
+    // ! Read more here: https://neilpatel.com/blog/open-graph-meta-tags/
+    // ! And another one: https://css-tricks.com/essential-meta-tags-social-media/
+    return (
+        <Helmet title={metaHeader.title} titleTemplate={contextType === "blog" ? (contentTitle.blogContext, title) : (contextType === "portfolio" ? contentTitle.portfolioContext : contentTitle.genericContext)} defer={false}>
+            <meta property="og:title" content={metaHeader.title} />
+            <meta property="og:description" content={metaHeader.description} />
+            {/* <meta property="og:type" content="article" /> */} // ! Check classifiers than Article.
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={title} />
+            <meta name="twitter:description" content={description} />
+
+            // * I don't know what to do on these for now.
+            {/* <meta name="twitter:creator" content={post.author.twitter} /> */}
+            {/* <meta property="og:image" content={seo.image} /> */}
+            {/* {image && <meta name="twitter:image" content={image} />} */}
+        </Helmet>
+    )
 }
 
-SEO.defaultProps = {
-  title: "CodexLink",
-  description: "No Description",
-  image: null,
-  article: false,
+SEO.propTypes = {
+    title: PropTypes.string.isRequired,
+    contextType: PropTypes.oneOf(["blog", "portfolio", "generic"]).isRequired,
+    description: PropTypes.string.isRequired,
 }
+
+export default SEO
