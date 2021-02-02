@@ -4,15 +4,19 @@ dotenv.config()
 
 module.exports = {
   siteMetadata: {
-    mainTitle: "Project Typed Works",
-    blogTitle: "%s | Typed Works Blog",
-    portfolioTitle: "%s | %s's Portfolio",
-    githubUsername: "CodexLink",
+    contentTitle: {
+      genericContext: "%s | Project Typed Works",
+      blogContext: `%s | ${userInfo.githubUsername}'s Blog`,
+      portfolioContext: `%s | ${userInfo.githubUsername}'s Portfolio`,
+    },
+    urlSite: "https://codexlink.github.io",
+    aboutSite: "My Website (composed of my Portfolio, Projects, and Blogging) that is Statically Generated with Gatsby, Context Written with MDX, Content Delivered with Github Pages, Designed with Material-UI and Powered by React.",
     tagline: "Unknown for now.",
-    aboutDescription: "My Website (composed of my Portfolio, Projects, and Blogging) that is Statically Generated with Gatsby, Context Written with MDX, Content Delivered with Github Pages, Designed with Material-UI and Powered by React.",
-    ownerName: "Janrey Licas",
-    ownerEmail: "self.codexlink@gmail.com",
-    siteVersion: "0.0.1-dev.1"
+    userInfo: {
+      ownerName: "Janrey Licas",
+      githubInfo: "https://github.github.io/CodexLink",
+      siteVersion: "0.0.1-dev.1"
+    }
   },
   // Todo: (Read) https://www.gatsbyjs.com/plugins/gatsby-image/?=gatsby-image
   //https://medium.com/@kyle.robert.gill/ridiculously-easy-image-optimization-with-gatsby-js-59d48e15db6e

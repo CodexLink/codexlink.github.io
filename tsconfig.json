@@ -11,11 +11,15 @@
     "noPropertyAccessFromIndexSignature": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "allowUnreachableCode": false, // debatable.
+    "allowUnreachableCode": false,
     "compilerOptions": {
-        "jsx": "react",
         "declaration": true,
-        "declarationDir": "./def-types"
-      }
+        "declarationDir": "./def-types",
+        "jsx": "react",
+        "lib": ["es6", "dom"],
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+    }
 
 }
