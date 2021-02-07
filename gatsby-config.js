@@ -1,14 +1,8 @@
-import dotenv from "dotenv"
 
-dotenv.config()
+require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    contentTitle: {
-      genericContext: "%s | Project Typed Works",
-      blogContext: `%s | ${userInfo.githubUsername}'s Blog`,
-      portfolioContext: `%s | ${userInfo.githubUsername}'s Portfolio`,
-    },
     urlSite: "https://codexlink.github.io",
     aboutSite: "My Website (composed of my Portfolio, Projects, and Blogging) that is Statically Generated with Gatsby, Context Written with MDX, Content Delivered with Github Pages, Designed with Material-UI and Powered by React.",
     tagline: "Unknown for now.",
@@ -16,6 +10,11 @@ module.exports = {
       ownerName: "Janrey Licas",
       githubInfo: "https://github.github.io/CodexLink",
       siteVersion: "0.0.1-dev.1"
+    },
+    contentTitle: {
+      genericContext: "%s | Project Typed Works",
+      blogContext: `%s | %s's Blog`,
+      portfolioContext: `%s | %s Portfolio`,
     }
   },
   // Todo: (Read) https://www.gatsbyjs.com/plugins/gatsby-image/?=gatsby-image
@@ -39,9 +38,9 @@ module.exports = {
       }
     },
     {
-      resource: "gatsby-plugin-mdx",
+      resolve: "gatsby-plugin-mdx",
       options: {
-        extensions: [".mdx", ".md"]
+        extensions: [".mdx", ".md"],
       }
     },
     {
@@ -70,17 +69,31 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-sitemap", // Learn this on Post-Development.
     {
-      resolve: `gatsby-plugin-typescript`,
+      resolve: "gatsby-plugin-typescript",
       options: {
         isTSX: true,
-        jsxPragma: `jsx`,
+        jsxPragma: "jsx",
         allExtensions: true,
       }
     },
+    // ! Do this on Stable Development!
+    // {
+    //   resolve: "gatsby-plugin-typegen",
+    //   options: {
+    //     outputPath: "src/__generated__/gatsby-types.d.ts",
+    //   },
+    //   emitSchema: {
+    //     'src/__generated__/gatsby-introspection.json': true,
+    //   },
+    //   emitPluginDocuments: {
+    //     'src/__generated__/gatsby-plugin-documents.graphql': true,
+    //   },
+    // },
+    "gatsby-plugin-typescript-checker",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "assets",
+        name: "content",
         path: "./src/content",
       },
     },

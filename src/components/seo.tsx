@@ -2,18 +2,27 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
-import { useStaticQuery, graphql } from "gatsby"
-import { ExportedMetaData, EnsuredMetaDataHeader } from "./staticChecking/interfaces"
-import { contentContexts as ContentType } from "./staticChecking/types"
+import { useStaticQuery, graphql, GatsbyGraphQLType } from "gatsby"
+import { ExportedMetaData, EnsuredMetaDataHeader } from "../helpers/typing/interfaces"
+import { contentContexts as ContentType } from "../helpers/typing/types"
 
 const metaDataQuery = graphql`
     query SEOQuery {
         site {
             siteMetadata {
-                contentTitle
+                urlSite
                 aboutSite
                 tagline
-                userInfo
+                userInfo {
+                    ownerName
+                    githubInfo
+                    siteVersion
+                }
+                contentTitle {
+                    genericContext
+                    blogContext
+                    portfolioContext
+                }
             }
         }
     }
@@ -25,11 +34,11 @@ const SEO = ({ title, contextType, description }: { title: string, contextType: 
     const { site: siteContext } = useStaticQuery(metaDataQuery)
 
     const {
-        contentTitle,
         urlSite,
         aboutSite,
         tagline,
         userInfo,
+        contentTitle
     } = siteContext.siteMetadata as ExportedMetaData
 
     const metaHeader: EnsuredMetaDataHeader = {
